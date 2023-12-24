@@ -88,7 +88,7 @@ def m1(ids, names, passlist):
         except IndexError:
             ln = fn
         for pw in passlist:
-            sys.stdout.write('\r\r [BISHESH-RUNNING] %s|ALIVE:%s ' % (loop, len(oks)))
+            sys.stdout.write('\r\r [LED-RUNNING] %s|ALIVE:%s ' % (loop, len(oks)))
             sys.stdout.flush()
             pas = pw.replace('first', fn.lower()).replace('First', fn).replace('last', ln.lower()).replace('Last', ln).replace('Name', names).replace('name', names.lower())
 
